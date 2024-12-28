@@ -3,13 +3,14 @@ import streamlit as st
 import os
 from transformers import AutoProcessor, Blip2ForConditionalGeneration
 import torch
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 # Load environment variables from the .env file
-load_dotenv()
+#load_dotenv()
 
 # Access the token
-HUGGING_FACE_TOKEN = os.getenv("HUGGING_FACE_TOKEN")
+#HUGGING_FACE_TOKEN = os.getenv("HUGGING_FACE_TOKEN")
+HUGGING_FACE_TOKEN = st.secrets["HUGGING_FACE_TOKEN"]
 
 
 # Title and description
